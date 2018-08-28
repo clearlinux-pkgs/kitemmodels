@@ -6,7 +6,7 @@
 #
 Name     : kitemmodels
 Version  : 5.49.0
-Release  : 2
+Release  : 3
 URL      : https://download.kde.org/stable/frameworks/5.49/kitemmodels-5.49.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.49/kitemmodels-5.49.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.49/kitemmodels-5.49.0.tar.xz.sig
@@ -15,6 +15,7 @@ Group    : Development/Tools
 License  : LGPL-2.1
 Requires: kitemmodels-lib
 Requires: kitemmodels-license
+Requires: kitemmodels-data
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
 BuildRequires : qtbase-dev qtbase-extras mesa-dev
@@ -24,10 +25,19 @@ BuildRequires : qtbase-dev qtbase-extras mesa-dev
 Set of item models extending the Qt model-view framework
 ## Introduction
 
+%package data
+Summary: data components for the kitemmodels package.
+Group: Data
+
+%description data
+data components for the kitemmodels package.
+
+
 %package dev
 Summary: dev components for the kitemmodels package.
 Group: Development
 Requires: kitemmodels-lib
+Requires: kitemmodels-data
 Provides: kitemmodels-devel
 
 %description dev
@@ -37,6 +47,7 @@ dev components for the kitemmodels package.
 %package lib
 Summary: lib components for the kitemmodels package.
 Group: Libraries
+Requires: kitemmodels-data
 Requires: kitemmodels-license
 
 %description lib
@@ -59,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534098179
+export SOURCE_DATE_EPOCH=1535430158
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -67,7 +78,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1534098179
+export SOURCE_DATE_EPOCH=1535430158
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/kitemmodels
 cp COPYING.LIB %{buildroot}/usr/share/doc/kitemmodels/COPYING.LIB
@@ -77,6 +88,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files data
+%defattr(-,root,root,-)
+/usr/share/xdg/kitemmodels.categories
 
 %files dev
 %defattr(-,root,root,-)
