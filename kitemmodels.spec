@@ -5,20 +5,20 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kitemmodels
-Version  : 5.50.0
-Release  : 5
-URL      : https://download.kde.org/stable/frameworks/5.50/kitemmodels-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/kitemmodels-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/kitemmodels-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 6
+URL      : https://download.kde.org/stable/frameworks/5.51/kitemmodels-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/kitemmodels-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/kitemmodels-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: kitemmodels-lib
-Requires: kitemmodels-license
-Requires: kitemmodels-data
+Requires: kitemmodels-data = %{version}-%{release}
+Requires: kitemmodels-lib = %{version}-%{release}
+Requires: kitemmodels-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : qtbase-dev mesa-dev
 
 %description
 # KItemModels
@@ -36,9 +36,9 @@ data components for the kitemmodels package.
 %package dev
 Summary: dev components for the kitemmodels package.
 Group: Development
-Requires: kitemmodels-lib
-Requires: kitemmodels-data
-Provides: kitemmodels-devel
+Requires: kitemmodels-lib = %{version}-%{release}
+Requires: kitemmodels-data = %{version}-%{release}
+Provides: kitemmodels-devel = %{version}-%{release}
 
 %description dev
 dev components for the kitemmodels package.
@@ -47,8 +47,8 @@ dev components for the kitemmodels package.
 %package lib
 Summary: lib components for the kitemmodels package.
 Group: Libraries
-Requires: kitemmodels-data
-Requires: kitemmodels-license
+Requires: kitemmodels-data = %{version}-%{release}
+Requires: kitemmodels-license = %{version}-%{release}
 
 %description lib
 lib components for the kitemmodels package.
@@ -63,25 +63,25 @@ license components for the kitemmodels package.
 
 
 %prep
-%setup -q -n kitemmodels-5.50.0
+%setup -q -n kitemmodels-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536434250
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539616560
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536434250
+export SOURCE_DATE_EPOCH=1539616560
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/kitemmodels
-cp COPYING.LIB %{buildroot}/usr/share/doc/kitemmodels/COPYING.LIB
+mkdir -p %{buildroot}/usr/share/package-licenses/kitemmodels
+cp COPYING.LIB %{buildroot}/usr/share/package-licenses/kitemmodels/COPYING.LIB
 pushd clr-build
 %make_install
 popd
@@ -127,8 +127,8 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5ItemModels.so.5
-/usr/lib64/libKF5ItemModels.so.5.50.0
+/usr/lib64/libKF5ItemModels.so.5.51.0
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/kitemmodels/COPYING.LIB
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/kitemmodels/COPYING.LIB
