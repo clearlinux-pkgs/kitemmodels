@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kitemmodels
-Version  : 5.64.0
-Release  : 25
-URL      : https://download.kde.org/stable/frameworks/5.64/kitemmodels-5.64.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.64/kitemmodels-5.64.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.64/kitemmodels-5.64.0.tar.xz.sig
+Version  : 5.65.0
+Release  : 26
+URL      : https://download.kde.org/stable/frameworks/5.65/kitemmodels-5.65.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.65/kitemmodels-5.65.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.65/kitemmodels-5.65.0.tar.xz.sig
 Summary  : Models for Qt Model/View system
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -65,14 +65,15 @@ license components for the kitemmodels package.
 
 
 %prep
-%setup -q -n kitemmodels-5.64.0
+%setup -q -n kitemmodels-5.65.0
+cd %{_builddir}/kitemmodels-5.65.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573360895
+export SOURCE_DATE_EPOCH=1576516649
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -89,10 +90,10 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1573360895
+export SOURCE_DATE_EPOCH=1576516649
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kitemmodels
-cp %{_builddir}/kitemmodels-5.64.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kitemmodels/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kitemmodels-5.65.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kitemmodels/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -113,6 +114,7 @@ popd
 /usr/include/KF5/KItemModels/KExtraColumnsProxyModel
 /usr/include/KF5/KItemModels/KLinkItemSelectionModel
 /usr/include/KF5/KItemModels/KModelIndexProxyMapper
+/usr/include/KF5/KItemModels/KNumberModel
 /usr/include/KF5/KItemModels/KRearrangeColumnsProxyModel
 /usr/include/KF5/KItemModels/KRecursiveFilterProxyModel
 /usr/include/KF5/KItemModels/KSelectionProxyModel
@@ -124,6 +126,7 @@ popd
 /usr/include/KF5/KItemModels/kitemmodels_export.h
 /usr/include/KF5/KItemModels/klinkitemselectionmodel.h
 /usr/include/KF5/KItemModels/kmodelindexproxymapper.h
+/usr/include/KF5/KItemModels/knumbermodel.h
 /usr/include/KF5/KItemModels/krearrangecolumnsproxymodel.h
 /usr/include/KF5/KItemModels/krecursivefilterproxymodel.h
 /usr/include/KF5/KItemModels/kselectionproxymodel.h
@@ -138,7 +141,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5ItemModels.so.5
-/usr/lib64/libKF5ItemModels.so.5.64.0
+/usr/lib64/libKF5ItemModels.so.5.65.0
+/usr/lib64/qt5/qml/org/kde/kitemmodels/libitemmodelsplugin.so
+/usr/lib64/qt5/qml/org/kde/kitemmodels/qmldir
 
 %files license
 %defattr(0644,root,root,0755)
