@@ -5,14 +5,14 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kitemmodels
-Version  : 5.73.0
-Release  : 34
-URL      : https://download.kde.org/stable/frameworks/5.73/kitemmodels-5.73.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.73/kitemmodels-5.73.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.73/kitemmodels-5.73.0.tar.xz.sig
+Version  : 5.75.0
+Release  : 35
+URL      : https://download.kde.org/stable/frameworks/5.75/kitemmodels-5.75.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.75/kitemmodels-5.75.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.75/kitemmodels-5.75.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : LGPL-2.1
+License  : LGPL-2.0 LGPL-2.1
 Requires: kitemmodels-data = %{version}-%{release}
 Requires: kitemmodels-lib = %{version}-%{release}
 Requires: kitemmodels-license = %{version}-%{release}
@@ -68,15 +68,15 @@ license components for the kitemmodels package.
 
 
 %prep
-%setup -q -n kitemmodels-5.73.0
-cd %{_builddir}/kitemmodels-5.73.0
+%setup -q -n kitemmodels-5.75.0
+cd %{_builddir}/kitemmodels-5.75.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1597707974
+export SOURCE_DATE_EPOCH=1602616141
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -92,10 +92,12 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1597707974
+export SOURCE_DATE_EPOCH=1602616141
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kitemmodels
-cp %{_builddir}/kitemmodels-5.73.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kitemmodels/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kitemmodels-5.75.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kitemmodels/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kitemmodels-5.75.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kitemmodels/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/kitemmodels-5.75.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kitemmodels/6f1f675aa5f6a2bbaa573b8343044b166be28399
 pushd clr-build
 %make_install
 popd
@@ -146,10 +148,12 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5ItemModels.so.5
-/usr/lib64/libKF5ItemModels.so.5.73.0
+/usr/lib64/libKF5ItemModels.so.5.75.0
 /usr/lib64/qt5/qml/org/kde/kitemmodels/libitemmodelsplugin.so
 /usr/lib64/qt5/qml/org/kde/kitemmodels/qmldir
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/kitemmodels/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+/usr/share/package-licenses/kitemmodels/20079e8f79713dce80ab09774505773c926afa2a
+/usr/share/package-licenses/kitemmodels/3c3d7573e137d48253731c975ecf90d74cfa9efe
+/usr/share/package-licenses/kitemmodels/6f1f675aa5f6a2bbaa573b8343044b166be28399
