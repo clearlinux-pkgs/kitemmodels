@@ -1,231 +1,53 @@
-libKF6ItemModels.so.6:KNumberModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KNumberModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KNumberModel::setStepSize(double)
-libKF6ItemModels.so.6:KNumberModel::setMaximumValue(double)
-libKF6ItemModels.so.6:KNumberModel::setMinimumValue(double)
-libKF6ItemModels.so.6:KNumberModel::stepSizeChanged()
+libKF6ItemModels.so.6:KBreadcrumbSelectionModel::setActualSelectionIncluded(bool)
+libKF6ItemModels.so.6:KBreadcrumbSelectionModel::setBreadcrumbLength(int)
+libKF6ItemModels.so.6:KBreadcrumbSelectionModel::~KBreadcrumbSelectionModel()
+libKF6ItemModels.so.6:KCheckableProxyModel::KCheckableProxyModel(QObject*)
+libKF6ItemModels.so.6:KCheckableProxyModel::setSelectionModel(QItemSelectionModel*)
+libKF6ItemModels.so.6:KCheckableProxyModel::setSourceModel(QAbstractItemModel*)
+libKF6ItemModels.so.6:KCheckableProxyModel::~KCheckableProxyModel()
+libKF6ItemModels.so.6:KColumnHeadersModel::KColumnHeadersModel(QObject*)
+libKF6ItemModels.so.6:KColumnHeadersModel::setSortColumn(int)
+libKF6ItemModels.so.6:KColumnHeadersModel::setSortOrder(Qt::SortOrder)
+libKF6ItemModels.so.6:KColumnHeadersModel::setSourceModel(QAbstractItemModel*)
+libKF6ItemModels.so.6:KColumnHeadersModel::sortColumnChanged()
+libKF6ItemModels.so.6:KColumnHeadersModel::sortOrderChanged()
+libKF6ItemModels.so.6:KColumnHeadersModel::sourceModelChanged()
+libKF6ItemModels.so.6:KColumnHeadersModel::~KColumnHeadersModel()
+libKF6ItemModels.so.6:KDescendantsProxyModel::KDescendantsProxyModel(QObject*)
+libKF6ItemModels.so.6:KDescendantsProxyModel::ancestorSeparatorChanged()
+libKF6ItemModels.so.6:KDescendantsProxyModel::displayAncestorDataChanged()
+libKF6ItemModels.so.6:KDescendantsProxyModel::expandsByDefaultChanged(bool)
+libKF6ItemModels.so.6:KDescendantsProxyModel::setDisplayAncestorData(bool)
+libKF6ItemModels.so.6:KDescendantsProxyModel::setExpandsByDefault(bool)
+libKF6ItemModels.so.6:KDescendantsProxyModel::setSourceModel(QAbstractItemModel*)
+libKF6ItemModels.so.6:KDescendantsProxyModel::sourceModelChanged()
+libKF6ItemModels.so.6:KDescendantsProxyModel::~KDescendantsProxyModel()
+libKF6ItemModels.so.6:KExtraColumnsProxyModel::KExtraColumnsProxyModel(QObject*)
+libKF6ItemModels.so.6:KExtraColumnsProxyModel::removeExtraColumn(int)
+libKF6ItemModels.so.6:KExtraColumnsProxyModel::setSourceModel(QAbstractItemModel*)
+libKF6ItemModels.so.6:KExtraColumnsProxyModel::~KExtraColumnsProxyModel()
+libKF6ItemModels.so.6:KLinkItemSelectionModel::KLinkItemSelectionModel(QObject*)
+libKF6ItemModels.so.6:KLinkItemSelectionModel::linkedItemSelectionModelChanged()
+libKF6ItemModels.so.6:KLinkItemSelectionModel::setLinkedItemSelectionModel(QItemSelectionModel*)
+libKF6ItemModels.so.6:KLinkItemSelectionModel::~KLinkItemSelectionModel()
+libKF6ItemModels.so.6:KModelIndexProxyMapper::isConnectedChanged()
+libKF6ItemModels.so.6:KModelIndexProxyMapper::~KModelIndexProxyMapper()
+libKF6ItemModels.so.6:KNumberModel::KNumberModel(QObject*)
+libKF6ItemModels.so.6:KNumberModel::formattingOptionsChanged()
 libKF6ItemModels.so.6:KNumberModel::maximumValueChanged()
 libKF6ItemModels.so.6:KNumberModel::minimumValueChanged()
 libKF6ItemModels.so.6:KNumberModel::setFormattingOptions(QFlags<QLocale::NumberOption>)
-libKF6ItemModels.so.6:KNumberModel::formattingOptionsChanged()
-libKF6ItemModels.so.6:KNumberModel::KNumberModel(QObject*)
-libKF6ItemModels.so.6:KNumberModel::KNumberModel(QObject*)
+libKF6ItemModels.so.6:KNumberModel::setMaximumValue(double)
+libKF6ItemModels.so.6:KNumberModel::setMinimumValue(double)
+libKF6ItemModels.so.6:KNumberModel::setStepSize(double)
+libKF6ItemModels.so.6:KNumberModel::stepSizeChanged()
 libKF6ItemModels.so.6:KNumberModel::~KNumberModel()
-libKF6ItemModels.so.6:KNumberModel::~KNumberModel()
-libKF6ItemModels.so.6:KNumberModel::~KNumberModel()
-libKF6ItemModels.so.6:KColumnHeadersModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KColumnHeadersModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KColumnHeadersModel::setSortOrder(Qt::SortOrder)
-libKF6ItemModels.so.6:KColumnHeadersModel::setSortColumn(int)
-libKF6ItemModels.so.6:KColumnHeadersModel::setSourceModel(QAbstractItemModel*)
-libKF6ItemModels.so.6:KColumnHeadersModel::sortOrderChanged()
-libKF6ItemModels.so.6:KColumnHeadersModel::sortColumnChanged()
-libKF6ItemModels.so.6:KColumnHeadersModel::sourceModelChanged()
-libKF6ItemModels.so.6:KColumnHeadersModel::KColumnHeadersModel(QObject*)
-libKF6ItemModels.so.6:KColumnHeadersModel::KColumnHeadersModel(QObject*)
-libKF6ItemModels.so.6:KColumnHeadersModel::~KColumnHeadersModel()
-libKF6ItemModels.so.6:KColumnHeadersModel::~KColumnHeadersModel()
-libKF6ItemModels.so.6:KColumnHeadersModel::~KColumnHeadersModel()
-libKF6ItemModels.so.6:KCheckableProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KCheckableProxyModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KCheckableProxyModel::setSourceModel(QAbstractItemModel*)
-libKF6ItemModels.so.6:KCheckableProxyModel::setSelectionModel(QItemSelectionModel*)
-libKF6ItemModels.so.6:KCheckableProxyModel::select(QItemSelection const&, QFlags<QItemSelectionModel::SelectionFlag>)
-libKF6ItemModels.so.6:KCheckableProxyModel::setData(QModelIndex const&, QVariant const&, int)
-libKF6ItemModels.so.6:KCheckableProxyModel::KCheckableProxyModel(QObject*)
-libKF6ItemModels.so.6:KCheckableProxyModel::KCheckableProxyModel(QObject*)
-libKF6ItemModels.so.6:KCheckableProxyModel::~KCheckableProxyModel()
-libKF6ItemModels.so.6:KCheckableProxyModel::~KCheckableProxyModel()
-libKF6ItemModels.so.6:KCheckableProxyModel::~KCheckableProxyModel()
-libKF6ItemModels.so.6:KSelectionProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KSelectionProxyModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KSelectionProxyModel::dropMimeData(QMimeData const*, Qt::DropAction, int, int, QModelIndex const&)
-libKF6ItemModels.so.6:KSelectionProxyModel::rootIndexAdded(QModelIndex const&, KSelectionProxyModel::QPrivateSignal)
-libKF6ItemModels.so.6:KSelectionProxyModel::setSourceModel(QAbstractItemModel*)
-libKF6ItemModels.so.6:KSelectionProxyModel::setFilterBehavior(KSelectionProxyModel::FilterBehavior)
-libKF6ItemModels.so.6:KSelectionProxyModel::setSelectionModel(QItemSelectionModel*)
-libKF6ItemModels.so.6:KSelectionProxyModel::rootSelectionAdded(QItemSelection const&, KSelectionProxyModel::QPrivateSignal)
+libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::KRearrangeColumnsProxyModel(QObject*)
+libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::~KRearrangeColumnsProxyModel()
+libKF6ItemModels.so.6:KSelectionProxyModel::KSelectionProxyModel()
 libKF6ItemModels.so.6:KSelectionProxyModel::filterBehaviorChanged(KSelectionProxyModel::QPrivateSignal)
 libKF6ItemModels.so.6:KSelectionProxyModel::selectionModelChanged(KSelectionProxyModel::QPrivateSignal)
-libKF6ItemModels.so.6:KSelectionProxyModel::rootIndexAboutToBeRemoved(QModelIndex const&, KSelectionProxyModel::QPrivateSignal)
-libKF6ItemModels.so.6:KSelectionProxyModel::rootSelectionAboutToBeRemoved(QItemSelection const&, KSelectionProxyModel::QPrivateSignal)
-libKF6ItemModels.so.6:KSelectionProxyModel::KSelectionProxyModel(QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KSelectionProxyModel::KSelectionProxyModel()
-libKF6ItemModels.so.6:KSelectionProxyModel::KSelectionProxyModel(QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KSelectionProxyModel::KSelectionProxyModel()
+libKF6ItemModels.so.6:KSelectionProxyModel::setFilterBehavior(KSelectionProxyModel::FilterBehavior)
+libKF6ItemModels.so.6:KSelectionProxyModel::setSelectionModel(QItemSelectionModel*)
+libKF6ItemModels.so.6:KSelectionProxyModel::setSourceModel(QAbstractItemModel*)
 libKF6ItemModels.so.6:KSelectionProxyModel::~KSelectionProxyModel()
-libKF6ItemModels.so.6:KSelectionProxyModel::~KSelectionProxyModel()
-libKF6ItemModels.so.6:KSelectionProxyModel::~KSelectionProxyModel()
-libKF6ItemModels.so.6:KDescendantsProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KDescendantsProxyModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KDescendantsProxyModel::setSourceModel(QAbstractItemModel*)
-libKF6ItemModels.so.6:KDescendantsProxyModel::expandSourceIndex(QModelIndex const&)
-libKF6ItemModels.so.6:KDescendantsProxyModel::sourceModelChanged()
-libKF6ItemModels.so.6:KDescendantsProxyModel::collapseSourceIndex(QModelIndex const&)
-libKF6ItemModels.so.6:KDescendantsProxyModel::setExpandsByDefault(bool)
-libKF6ItemModels.so.6:KDescendantsProxyModel::sourceIndexExpanded(QModelIndex const&)
-libKF6ItemModels.so.6:KDescendantsProxyModel::setAncestorSeparator(QString const&)
-libKF6ItemModels.so.6:KDescendantsProxyModel::sourceIndexCollapsed(QModelIndex const&)
-libKF6ItemModels.so.6:KDescendantsProxyModel::setDisplayAncestorData(bool)
-libKF6ItemModels.so.6:KDescendantsProxyModel::expandsByDefaultChanged(bool)
-libKF6ItemModels.so.6:KDescendantsProxyModel::ancestorSeparatorChanged()
-libKF6ItemModels.so.6:KDescendantsProxyModel::displayAncestorDataChanged()
-libKF6ItemModels.so.6:KDescendantsProxyModel::KDescendantsProxyModel(QObject*)
-libKF6ItemModels.so.6:KDescendantsProxyModel::KDescendantsProxyModel(QObject*)
-libKF6ItemModels.so.6:KDescendantsProxyModel::~KDescendantsProxyModel()
-libKF6ItemModels.so.6:KDescendantsProxyModel::~KDescendantsProxyModel()
-libKF6ItemModels.so.6:KDescendantsProxyModel::~KDescendantsProxyModel()
-libKF6ItemModels.so.6:KModelIndexProxyMapper::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KModelIndexProxyMapper::qt_metacast(char const*)
-libKF6ItemModels.so.6:KModelIndexProxyMapper::isConnectedChanged()
-libKF6ItemModels.so.6:KModelIndexProxyMapper::KModelIndexProxyMapper(QAbstractItemModel const*, QAbstractItemModel const*, QObject*)
-libKF6ItemModels.so.6:KModelIndexProxyMapper::KModelIndexProxyMapper(QAbstractItemModel const*, QAbstractItemModel const*, QObject*)
-libKF6ItemModels.so.6:KModelIndexProxyMapper::~KModelIndexProxyMapper()
-libKF6ItemModels.so.6:KModelIndexProxyMapper::~KModelIndexProxyMapper()
-libKF6ItemModels.so.6:KModelIndexProxyMapper::~KModelIndexProxyMapper()
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::appendColumn(QString const&)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::setSourceModel(QAbstractItemModel*)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::removeExtraColumn(int)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::setExtraColumnData(QModelIndex const&, int, int, QVariant const&, int)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::extraColumnDataChanged(QModelIndex const&, int, int, QList<int> const&)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::setData(QModelIndex const&, QVariant const&, int)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::KExtraColumnsProxyModel(QObject*)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::KExtraColumnsProxyModel(QObject*)
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::~KExtraColumnsProxyModel()
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::~KExtraColumnsProxyModel()
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::~KExtraColumnsProxyModel()
-libKF6ItemModels.so.6:KLinkItemSelectionModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::setLinkedItemSelectionModel(QItemSelectionModel*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::linkedItemSelectionModelChanged()
-libKF6ItemModels.so.6:KLinkItemSelectionModel::select(QModelIndex const&, QFlags<QItemSelectionModel::SelectionFlag>)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::select(QItemSelection const&, QFlags<QItemSelectionModel::SelectionFlag>)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::KLinkItemSelectionModel(QAbstractItemModel*, QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::KLinkItemSelectionModel(QObject*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::KLinkItemSelectionModel(QAbstractItemModel*, QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::KLinkItemSelectionModel(QObject*)
-libKF6ItemModels.so.6:KLinkItemSelectionModel::~KLinkItemSelectionModel()
-libKF6ItemModels.so.6:KLinkItemSelectionModel::~KLinkItemSelectionModel()
-libKF6ItemModels.so.6:KLinkItemSelectionModel::~KLinkItemSelectionModel()
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::setBreadcrumbLength(int)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::setActualSelectionIncluded(bool)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::select(QModelIndex const&, QFlags<QItemSelectionModel::SelectionFlag>)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::select(QItemSelection const&, QFlags<QItemSelectionModel::SelectionFlag>)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::KBreadcrumbSelectionModel(QItemSelectionModel*, KBreadcrumbSelectionModel::BreadcrumbTarget, QObject*)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::KBreadcrumbSelectionModel(QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::KBreadcrumbSelectionModel(QItemSelectionModel*, KBreadcrumbSelectionModel::BreadcrumbTarget, QObject*)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::KBreadcrumbSelectionModel(QItemSelectionModel*, QObject*)
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::~KBreadcrumbSelectionModel()
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::~KBreadcrumbSelectionModel()
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::~KBreadcrumbSelectionModel()
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::qt_metacast(char const*)
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::setSourceColumns(QList<int> const&)
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::KRearrangeColumnsProxyModel(QObject*)
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::KRearrangeColumnsProxyModel(QObject*)
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::~KRearrangeColumnsProxyModel()
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::~KRearrangeColumnsProxyModel()
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::~KRearrangeColumnsProxyModel()
-libKF6ItemModels.so.6:KNumberModel::metaObject() const
-libKF6ItemModels.so.6:KNumberModel::maximumValue() const
-libKF6ItemModels.so.6:KNumberModel::minimumValue() const
-libKF6ItemModels.so.6:KNumberModel::formattingOptions() const
-libKF6ItemModels.so.6:KNumberModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KNumberModel::value(QModelIndex const&) const
-libKF6ItemModels.so.6:KNumberModel::rowCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KNumberModel::stepSize() const
-libKF6ItemModels.so.6:KNumberModel::roleNames() const
-libKF6ItemModels.so.6:KColumnHeadersModel::metaObject() const
-libKF6ItemModels.so.6:KColumnHeadersModel::sortColumn() const
-libKF6ItemModels.so.6:KColumnHeadersModel::sourceModel() const
-libKF6ItemModels.so.6:KColumnHeadersModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KColumnHeadersModel::rowCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KColumnHeadersModel::roleNames() const
-libKF6ItemModels.so.6:KColumnHeadersModel::sortOrder() const
-libKF6ItemModels.so.6:KCheckableProxyModel::metaObject() const
-libKF6ItemModels.so.6:KCheckableProxyModel::selectionModel() const
-libKF6ItemModels.so.6:KCheckableProxyModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KCheckableProxyModel::flags(QModelIndex const&) const
-libKF6ItemModels.so.6:KCheckableProxyModel::roleNames() const
-libKF6ItemModels.so.6:KSelectionProxyModel::headerData(int, Qt::Orientation, int) const
-libKF6ItemModels.so.6:KSelectionProxyModel::metaObject() const
-libKF6ItemModels.so.6:KSelectionProxyModel::columnCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::hasChildren(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::mapToSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::mapFromSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::filterBehavior() const
-libKF6ItemModels.so.6:KSelectionProxyModel::selectionModel() const
-libKF6ItemModels.so.6:KSelectionProxyModel::sourceRootIndexes() const
-libKF6ItemModels.so.6:KSelectionProxyModel::mapSelectionToSource(QItemSelection const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::supportedDropActions() const
-libKF6ItemModels.so.6:KSelectionProxyModel::mapSelectionFromSource(QItemSelection const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KSelectionProxyModel::flags(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::index(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::match(QModelIndex const&, int, QVariant const&, int, QFlags<Qt::MatchFlag>) const
-libKF6ItemModels.so.6:KSelectionProxyModel::parent(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::mimeData(QList<QModelIndex> const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::rowCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KSelectionProxyModel::mimeTypes() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::headerData(int, Qt::Orientation, int) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::metaObject() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::columnCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::hasChildren(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::mapToSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::mapFromSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::expandsByDefault() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::ancestorSeparator() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::displayAncestorData() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::isSourceIndexVisible(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::supportedDropActions() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::isSourceIndexExpanded(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::flags(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::index(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::match(QModelIndex const&, int, QVariant const&, int, QFlags<Qt::MatchFlag>) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::parent(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::mimeData(QList<QModelIndex> const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::rowCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KDescendantsProxyModel::mimeTypes() const
-libKF6ItemModels.so.6:KDescendantsProxyModel::roleNames() const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::metaObject() const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::isConnected() const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::mapLeftToRight(QModelIndex const&) const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::mapRightToLeft(QModelIndex const&) const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::mapSelectionLeftToRight(QItemSelection const&) const
-libKF6ItemModels.so.6:KModelIndexProxyMapper::mapSelectionRightToLeft(QItemSelection const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::headerData(int, Qt::Orientation, int) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::metaObject() const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::columnCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::hasChildren(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::mapToSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::mapSelectionToSource(QItemSelection const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::extraColumnForProxyColumn(int) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::proxyColumnForExtraColumn(int) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::data(QModelIndex const&, int) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::buddy(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::flags(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::index(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::parent(QModelIndex const&) const
-libKF6ItemModels.so.6:KExtraColumnsProxyModel::sibling(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KLinkItemSelectionModel::metaObject() const
-libKF6ItemModels.so.6:KLinkItemSelectionModel::linkedItemSelectionModel() const
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::metaObject() const
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::breadcrumbLength() const
-libKF6ItemModels.so.6:KBreadcrumbSelectionModel::isActualSelectionIncluded() const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::headerData(int, Qt::Orientation, int) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::metaObject() const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::columnCount(QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::hasChildren(QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::mapToSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::mapFromSource(QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::proxyColumnForSourceColumn(int) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::sourceColumnForProxyColumn(int) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::index(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::parent(QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::sibling(int, int, QModelIndex const&) const
-libKF6ItemModels.so.6:KRearrangeColumnsProxyModel::rowCount(QModelIndex const&) const
